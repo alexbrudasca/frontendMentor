@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Insure landing page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <nav class="max-w-full p-4 py-6 flex justify-between items-center lg:pb-[50px] lg:px-[150px] ">
+    <div class="logo">
+      <img src="/images/logo.svg" alt="">
+    </div>
+
+    <ul id="listMenu" class="hidden gap-2 lg:flex lg:items-center sm:absolute sm:top-3 sm:right-5 sm:flex-colbg-black sm:z-40 sm:text-stone-300 sm:hidden text-[#89888a] font-[Karla] uppercase text-sm space-x-1">
+      <li>How we work</li>
+      <li>Blog</li>
+      <li>Account</li>
+      <button class="border-2 border-[#313132] p-1 px-5 text-[#18181b]">View plans</button>
+    </ul>
+    <div id="burgerBtn" class="burger block lg:hidden cursor-pointer">
+      <img src="/images/icon-hamburger.svg" alt="">
+    </div>
+  </nav>
+  <section id="headerImage" class="header__image lg:absolute lg:top-20 lg:right-9 lg:z-30">
+    <img src="/images/image-intro-mobile.jpg" alt="" class="w-full lg:hidden">
+    <img src="/images/image-intro-desktop.jpg" class="hidden  lg:h-[80vh] lg:block ">
+  </section>
+  <section id="header" class="lg:h-[350px]  header__text mb-5 overflow-hidden relative  flex flex-col gap-4 items-center justify-center w-full bg-[#2c2640] text-white">
+    <img src="/images/bg-pattern-intro-left-mobile.svg" alt="" class="absolute left-0 top-0">
+    <div class="lg:flex lg:flex-col flex flex-col gap-4 h">
+      <div class="lg:bg-white lg:w-[100px] lg:absolute lg:h-[0.05rem] "></div>    
+      <h1 class="lg:w-[70%] lg:pr-[400px] font-[DM] text-4xl my-4 w-[80%] text-center">Humanizing your insurance.</h1>
+      <p class="lg:w-[500px] lg:pr-[200px] lg:text-left font-[Karla] flex items-center justify-center text-center">  Get your life insurance coverage easier and faster. We blend our expertise 
+        and technology to help you find the plan that’s right for you. Ensure you 
+        and your loved ones are protected.</p>
+        <button class="lg:mr-[850px] bg-transparent border border-white px-2 mx-auto mb-5">View plans</button></div>
+      <img src="/images/bg-pattern-intro-right-mobile.svg" alt="" class="absolute right-0 bottom-0">
+  </section>
+
+  <section id="different" class="relative pb-6 lg:pt-[200px]">
+    <div class="absolute left-[25%] w-[50%] flex items-center justify-center h-0.5 bg-slate-300 lg:w-[100px]"></div>
+    <h3 class="font-semibold text-4xl py-4 lg:pl-[200px] font-[karla]">We're different</h3>
+    <div class="lg:flex lg:flex-row lg:mt-12 container w-full flex gap-5 flex-col justify-center items-center text-center">
+      <div class="card flex flex-col justify-center items-center">
+        <img src="/images/icon-snappy-process.svg" alt="">
+        <p class="font-semibold text-2xl font-[DM]">Snappy Process</p>
+        <span class="max-w-sm text-sm text-gray-500 font-[Karla] "> Our application process can be completed in minutes, not hours. Don’t get 
+          stuck filling in tedious forms.</span>
+      </div>
+
+      <div class="card flex flex-col justify-center items-center ">
+        <img src="/images/icon-affordable-prices.svg" alt="">
+        <p class="font-semibold text-2xl font-[DM]">Affordable Prices</p>
+        <span class="max-w-sm text-sm text-gray-500 font-[Karla] ">We don’t want you worrying about high monthly costs. Our prices may be low, 
+          but we still offer the best coverage possible.</span>
+      </div>
+
+      <div class="card flex flex-col justify-center items-center ">
+        <img src="/images/icon-people-first.svg" alt="">
+        <p class="font-semibold text-2xl font-[DM] ">People First</p>
+        <span class="max-w-sm text-sm text-gray-500 font-[Karla] ">Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+          sure you’re covered when you need it.</span>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="howwework" class="howwework__text mb-5 mt-6 overflow-hidden relative  flex flex-col gap-4 items-center justify-center w-full bg-[#2c2640] text-white h-60">
+    <h1 class="font-[DM] text-4xl my-4 w-[80%] text-center">Find out more about how we work</h1>
+    <button class="bg-transparent border border-white px-2 mx-auto mb-5">How we work</button>
+    <img src="/images/bg-pattern-intro-right-mobile.svg" alt="" class="absolute right-0 bottom-0">
+  </section>
+  
+  <section id="footer" class="container relative pt-16 bg-[#fafafa] w-full">
+    <article id="socialmedia" class="relative flex flex-col justify-center items-center ">
+      <div class="absolute left-[25%] w-[50%] flex items-center justify-center h-0.5 bg-[#e6e6e6]"></div>
+      <img src="/images/logo.svg" alt="" class="mb-6">
+      <div class="sm flex gap-5">
+        <img src="/images/icon-facebook.svg" alt="">
+        <img src="/images/icon-twitter.svg" alt="">
+        <img src="/images/icon-pinterest.svg" alt="">
+        <img src="/images/icon-instagram.svg" alt="">
+      </div>
+    </article>
+    
+    <div class="links lg:flex lg:flex-row lg:justify-around flex items-center justify-center text-center gap-4 flex-col pt-5">
+      <ul>
+        <li class="text-[#8f8d91] font-semibold font-[karla] pb-5 text-[20px]">OUR COMPANY</li>
+          <li class="text-[#3f3c4d] font-semibold font-[karla]">HOW WE WORK</li>
+          <li class="text-[#3f3c4d] font-bold font-[karla]">CHECK PRICE</li>
+          <li class="text-[#3f3c4d] font-bold font-[karla]">WHY INSURE?</li>
+          <li class="text-[#3f3c4d] font-bold font-[karla]">REVIEWS</li>
+        </ul>
+        <ul>
+          <li class="text-[#8f8d91] font-semibold font-[karla] pb-5">HELP ME</li>
+          <li class="text-[#3f3c4d] font-bold font-[karla]">FAQ</li>
+          <li class="text-[#3f3c4d] font-bold font-[karla]">TERMS OF USE</li>
+          <li class="text-[#3f3c4d] font-bold font-[karla]">PRIVACY POLICY</li>
+          <li class="text-[#3f3c4d] font-bold font-[karla]">COOKIES</li>
+        </ul>
+        <ul>
+          <li class="text-[#8f8d91] font-semibold font-[karla] pb-5">CONTACT</li>
+          <li class="text-[#3f3c4d] font-bold font-[karla]">SALES</li>
+          <li class="text-[#3f3c4d] font-bold font-[karla]">SUPPORT</li>
+          <li class="text-[#3f3c4d] font-bold font-[karla]">LIVE CHAT</li>
+        </ul>
+        <ul>
+          <li class="text-[#8f8d91] font-semibold font-[karla] pb-5">OHTERS</li>
+          <li class="text-[#3f3c4d] font-bold font-[karla]">CAREERS</li>
+          <li class="text-[#3f3c4d] font-bold font-[karla]">PRESS</li>
+          <li class="text-[#3f3c4d] font-bold font-[karla]">LICENSES</li>
+        </ul>
+      </div>
+    </section>
+
+ 
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://alexbrudasca.netlify.app">Alex Brudasca</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
+
+<!-- 
+
+  Humanizing your insurance.
+
+  Get your life insurance coverage easier and faster. We blend our expertise 
+  and technology to help you find the plan that’s right for you. Ensure you 
+  and your loved ones are protected.
+
+  View plans
+
+  We’re different
+
+  Snappy Process
+
+  Our application process can be completed in minutes, not hours. Don’t get 
+  stuck filling in tedious forms.
+
+  Affordable Prices
+
+  We don’t want you worrying about high monthly costs. Our prices may be low, 
+  but we still offer the best coverage possible.
+
+  People First
+
+  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+  sure you’re covered when you need it.
+
+  Find out more about how we work
+
+  How we work
+
+  Our company
+
+  How we work
+  Why Insure?
+  View plans
+  Reviews
+
+  Help me
+
+  FAQ
+  Terms of use
+  Privacy policy
+  Cookies
+
+  Contact
+
+  Sales
+  Support
+  Live chat
+
+  Others
+
+  Careers
+  Press
+  Licenses -->

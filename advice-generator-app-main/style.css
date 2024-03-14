@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+
+:root{
+    
+--Light-Cyan: #cee3e9;
+--Neon-Green: #52ffa8;
+
+
+--Grayish-Blue: #4e5d73;
+--Dark-Grayish-Blue: #323a49;
+--Dark-Blue: #1f2632;
+
+--Font-size-para: 28px;
+}
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--Dark-Blue);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-family: "Manrope";
+}
+
+
+
+.container{
+    background: var(--Dark-Grayish-Blue);
+    width: 400px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.30);
+}
+
+
+#advice{
+    color: var(--Neon-Green);
+    height: 50px;
+}
+
+#generate{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -20px;
+    border: none;
+    left: 42%;
+    transition: .3s ease;
+    background: var(--Neon-Green);
+}
+
+#generate:hover{
+    transform: rotate(25deg);
+}
+
+p{
+    width: 300px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--Light-Cyan);
+    position: relative;
+    letter-spacing: 1px;
+    font-weight: 800;
+    padding-bottom: 5rem;
+}
+
+.fa-dice-five{
+    font-size: 14px;
+}
+
+.quote{
+    position: relative;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    background: var(--Light-Cyan);
+    left: 15px;
+    height: 1px;
+    top: -33px;
+}
+
+.quote::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    background: var(--Light-Cyan);
+    right: 15px;
+    height: 1px;
+    top: -33px;
+}
+.quote p{
+    font-size: 30px;
+    color: var(--Light-Cyan);
+}
+.attribution{
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+}
