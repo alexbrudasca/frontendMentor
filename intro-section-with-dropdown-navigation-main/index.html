@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css' integrity='sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==' crossorigin='anonymous'/>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <section class="main">
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/images/logo.svg" alt="">
+        </div>
+        <div class="list">
+          <ul>
+            <li id="features">Features <i class="fa-solid fa-chevron-down"></i>
+            <div class="pop-up-container hidden">
+              <div class="pop-up"><img src="/images/icon-todo.svg" alt=""><p>Todo List</p></div>
+              <div class="pop-up"><img src="/images/icon-calendar.svg" alt="">Calendar</div>
+              <div class="pop-up"><img src="/images/icon-reminders.svg" alt="">Reminder</div>
+              <div class="pop-up"><img src="/images/icon-planning.svg" alt="">Planning</div>
+            </div></li>
+            <li id="company">Company <i class="fa-solid fa-chevron-down"></i>
+              <div class="companyPopUp hidden">
+                <div class="pop-up">History</div>
+                <div class="pop-up">Our Team</div>
+                <div class="pop-up">Blog</div>
+              </div>
+            </li>
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+        </div>
+      </nav>
+      <div class="nav-buttons">
+        <button class="login">Login</button>
+        <button class="register">Register</button>
+      </div>
+    </header>
+
+    <section class="content">
+      <div class="content-left">
+        <h1>Make remove work</h1>
+
+        <p>  Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+
+          <button class="learn">Learn More</button>
+
+          <div class="cards">
+            <img src="/images/client-databiz.svg" alt="">
+            <img src="/images/client-audiophile.svg" alt="">
+            <img src="/images/client-meet.svg" alt="">
+            <img src="/images/client-maker.svg" alt="">
+          </div>
+      </div>
+      <section class="image">
+        <img src="/images/image-hero-desktop.png" alt="">
+      </section>
+    </section>
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://alexbrudasca.netlify.app">Alex Brudasca</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

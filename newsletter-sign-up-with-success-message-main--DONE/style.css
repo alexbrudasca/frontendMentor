@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+:root{
+--footsizePara: 16px;  
+--Tomato: #ff6257;
+--Dark-Slate-Grey: hsl(234, 29%, 20%);
+--Charcoal-Grey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Roboto",sans-serif;
+    background: var(--Charcoal-Grey);
+    overflow-y: hidden;
+}
+.main{
+    background: var(--White);
+    display: flex;
+    padding: 25px 35px;
+    border-radius: 10px;
+    max-width: 800px;
+    height: 600px;
+}
+.header h1{
+    font-size: 50px;
+    color: var(--Dark-Slate-Grey);
+}
+.header p{
+    color: var(--Dark-Slate-Grey);
+    font-size: var(--footsizePara);
+    font-weight: 400;
+}
+.form{
+    padding-top: 1rem;
+}
+input[type=checkbox]{
+    appearance: none;
+    background: var(--Tomato);
+    border-radius: 50%;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+input[type=checkbox]:focus{
+    content: "\2713";
+    color: var(--White);
+    position: relative;
+    background: url(/assets/images/icon-success.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150%;
+}
+.div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.input-ctn{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+.input-ctn label{
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
+.input-ctn small{
+    color: red;
+    font-size: 13px;
+}
+    
+.input-ctn input{
+    width: 70%;
+    height: 35px;
+    padding-left: 15px;
+    color: var(--Grey);
+}
+#mainSubmit{
+    width:290px;
+    height: 40px;
+    background: var(--Charcoal-Grey);
+    color: var(--White);
+    padding: 15px 0px;
+    border-radius: 5px;
+    font-weight: 700;
+    display: flex;
+    border: none;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#mainSubmit:hover{
+    background: linear-gradient(to right, #ef4e72, #ff6257);
+    color: #fff;
+    box-shadow: 0 0 10px #ff6257;
+}
+
+/* succes container */
+#email{
+    font-weight: 700;
+}
+.succes{
+    background: var(--White);
+    width: 250px;
+    height: 300px;
+    padding: 30px 30px;
+    position: absolute;
+    border-radius: 10px;
+}
+.succes #submit{
+    width: 70%;
+    position: relative;
+    left: 50px;
+    background: var(--Charcoal-Grey);
+    color: var(--White);
+    border: none;
+    font-weight: 700;
+    padding: 15px 15px;
+}
+.succes #submit:hover{
+    background: linear-gradient(to right, #ef4e72, #ff6257);
+    color: #fff;
+    box-shadow: 0 0 10px #ff6257;
+}
+.succes h1{
+    font-size: 22px;
+}
+
+
+/* ** display hidden */
+.hidden{
+    display: none;
+}
+
+/* attr section */
+.attribution{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+/* Responsive Section */
+
+@media(max-width: 600px) {
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .right{
+        width: 100%;
+        height: 30px;
+    }
+    img{
+        display: none;
+    }
+    .succes{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    input[type='checkbox']{
+        display: none;
+    }
+  }
